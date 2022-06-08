@@ -1,0 +1,7 @@
+# Node artifact files
+node_modules/
+dist/
+build/
+
+# Exclude package-lock.json
+package-lock.json
