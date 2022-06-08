@@ -27,19 +27,22 @@
       "error",
       "double",
       {
-        "avoidEscape": true
+        "avoidEscape": true,
+        "allowTemplateLiterals": true
       }
     ],
     "@typescript-eslint/quotes": [
       "error",
       "double",
       {
-        "avoidEscape": true
+        "avoidEscape": true,
+        "allowTemplateLiterals": true
       }
     ],
     "react/jsx-uses-react": ["off"],
     "react/react-in-jsx-scope": ["off"],
     "react/jsx-props-no-spreading": ["warn"],
+    "import/prefer-default-export": ["off"],
     "no-shadow": "off"
   }
 }
