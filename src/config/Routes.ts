@@ -5,21 +5,21 @@ export const routes = [
   {
     path: `${routePaths.NOTFOUND}`,
     private: false,
-    element: lazy(() => import("../pages/NotFound/Index")),
+    element: lazy(() => import("../pages/NotFound")),
   },
   {
     path: `${routePaths.SIGNIN}`,
     private: false,
-    element: lazy(() => import("../pages/Auth/SignIn/Index")),
+    element: lazy(() => import("../pages/Auth/SignIn")),
   },
   {
     path: `${routePaths.SIGNUP}`,
     private: false,
-    element: lazy(() => import("../pages/Auth/SignUp/Index")),
+    element: lazy(() => import("../pages/Auth/SignUp")),
   },
   {
     path: `${routePaths.HOME}`,
     private: true,
-    element: lazy(() => import("../pages/Home/Index")),
+    element: lazy(() => import("../pages/Home")),
   },
 ];
