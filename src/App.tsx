@@ -2,7 +2,7 @@ import { Suspense } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import { routes } from "./config/Routes";
-import { AuthLayout, DashBoardLayout } from "./layout/Index";
+import { AuthLayout, DashBoardLayout } from "./layout";
 
 function App() {
   return (

@@ -1,15 +1,15 @@
 import * as Style from "./Style";
-import Header from "../../components/Header/Index";
-import SideBar from "../../components/SIdeBar/Index";
+import Header from "../Header";
+import SideBar from "../SideBar";
+import Footer from "../Footer";
 
 function DashBoardLayout({ children }: { children: JSX.Element }) {
   return (
     <Style.AdminLayoutContainer>
       <Header />
       <SideBar />
-      <Style.MainContent>
-        <Style.ContentWrapper>DashBoard {children}</Style.ContentWrapper>
-      </Style.MainContent>
+      <Style.MainContent>DashBoard {children}</Style.MainContent>
+      <Footer />
     </Style.AdminLayoutContainer>
   );
 }

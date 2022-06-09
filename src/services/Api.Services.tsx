@@ -1,5 +1,5 @@
 import Axios from "axios";
-import { ErrorToast } from "../components/toaster/Toaster";
+import { ErrorToast } from "../components/Toaster";
 
 const API = Axios.create({
   baseURL: "",
