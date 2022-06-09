@@ -1,5 +1,5 @@
-function Index() {
-  return <div>Home </div>;
+function Home() {
+  return <>Home</>;
 }
 
-export default Index;
+export default Home;
