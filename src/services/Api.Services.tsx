@@ -1,8 +1,9 @@
 import Axios from "axios";
 import { ErrorToast } from "../components/Toaster";
+import * as Env from "../config/Env";
 
 const API = Axios.create({
-  baseURL: "",
+  baseURL: Env.API_URL,
 });
 API.interceptors.request.use(
   (conf: any) => {
@@ -19,10 +20,6 @@ API.interceptors.response.use(
   },
   (error) => {
     // You can handle error here and trigger warning message without get in the code inside
-    //   store.dispatch({
-    //     type: env.actionsTypes.openModal,
-    //     message: error.message,
-    //   });
     ErrorToast(JSON.parse(error.request.response).message);
     return Promise.reject(JSON.parse(error.request.response));
   },

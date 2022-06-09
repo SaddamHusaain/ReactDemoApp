@@ -1,11 +1,7 @@
-import { AuthContainer, FormContainer } from "./Style";
+import { AuthContainer } from "./Style";
 
 function AuthLayout({ children }: { children: JSX.Element }) {
-  return (
-    <AuthContainer>
-      <FormContainer>AuthLayout {children}</FormContainer>
-    </AuthContainer>
-  );
+  return <AuthContainer>{children}</AuthContainer>;
 }
 
 export default AuthLayout;
